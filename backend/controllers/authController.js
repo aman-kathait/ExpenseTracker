@@ -26,8 +26,8 @@ exports.registerUser=async(req,res)=>{
             token:generateToken(user._id)
         });
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Error Registering User' });
+        console.error("Detailed registration error:", error);
+        res.status(500).json({ message: 'Error Registering User', error: error.message });
     }
 };
 exports.loginUser=async(req,res)=>{

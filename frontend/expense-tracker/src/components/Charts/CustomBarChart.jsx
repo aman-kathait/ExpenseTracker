@@ -11,7 +11,7 @@ import {
     Cell,
 } from 'recharts';
 const CustomBarChart = ({data}) => {
-    console.log('CustomBarChart received data:', data); // Debug log
+    //console.log('CustomBarChart received data:', data);
 
     // Add safety check for data
     if (!data || !Array.isArray(data) || data.length === 0) {

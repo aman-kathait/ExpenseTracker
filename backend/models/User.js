@@ -4,8 +4,7 @@ const bcrypt = require('bcryptjs');
 const userSchema=new mongoose.Schema({
     fullName:{
         type:String,
-        required:true,
-        unique:true
+        required:true
     },
     email:{
         type:String,
@@ -18,7 +17,7 @@ const userSchema=new mongoose.Schema({
     },
     profileImageUrl:{
         type:String,
-        default:'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
+        default:''
     }
 }, {timestamps:true}
 );

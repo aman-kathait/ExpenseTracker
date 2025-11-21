@@ -15,7 +15,7 @@ const EmojiPickerPopup = ({icon,onSelect}) => {
         </div>
         
       </div>
-      <p className="text-sm text-gray-500">{icon ? "Change Icon" : "Pick an Icon"}</p>
+      <p className="text-sm text-gray-900">{icon ? "Change Icon" : "Pick an Icon"}</p>
 
     {isOpen && (
         <div className="relative">

@@ -28,13 +28,9 @@ export const addThousandSeparator=(num)=>{
 };
 
 export const prepareExpenseBarChartData=(data=[])=>{
-    console.log('prepareExpenseBarChartData - input data:', data);
-    console.log('prepareExpenseBarChartData - is Array:', Array.isArray(data));
-    console.log('prepareExpenseBarChartData - data length:', data?.length);
     
-    // Add safety check
     if (!data || !Array.isArray(data) || data.length === 0) {
-        console.log('prepareExpenseBarChartData - returning empty array due to invalid data');
+        //console.log('prepareExpenseBarChartData - returning empty array due to invalid data');
         return [];
     }
     
@@ -43,9 +39,9 @@ export const prepareExpenseBarChartData=(data=[])=>{
         const category = item?.category || 'Other';
         if (!acc[category]) {
             acc[category] = {
-                month: category, // Changed from 'category' to 'month' to match CustomBarChart dataKey
+                month: category, 
                 amount: 0,
-                category: category // Keep category for tooltip
+                category: category 
             };
         }
         acc[category].amount += item?.amount || 0;

@@ -80,7 +80,7 @@ const Income = () => {
     }
   };
 
-  const handleDownloadIncomeDetails=async()=>{
+const handleDownloadIncomeDetails=async()=>{
     try {
       console.log('Starting download...'); // Debug log
       toast.loading('Downloading income details...');
