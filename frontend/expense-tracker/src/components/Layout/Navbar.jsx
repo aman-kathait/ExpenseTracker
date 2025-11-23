@@ -16,7 +16,7 @@ const Navbar = ({activeMenu}) => {
                 </svg>
             )}
         </button>
-    <h2 className='text-lg font-semibold text-black'>Expense Tracker</h2>
+    <h2 className='text-lg font-semibold text-black'>My Money</h2>
 
     {openSideMenu && (
         <div className="fixed top-[61px] -ml-4 bg-white">
